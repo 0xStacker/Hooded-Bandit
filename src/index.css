@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+    --color-bandit-orange: #F15A24;
+    --color-bandit-bg: #080B1A;
+    --color-bandit-orange-bright: #FF7A32;
+    --color-bandit-text:#F5F1E8;
+    --color-bandit-green: #8DBF3F;
+    --color-hood-purple: #7b4bb7;
+    --font-bandit: "Jersey 15", sans-serif;
+}
