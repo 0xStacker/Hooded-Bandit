@@ -1,7 +1,9 @@
+import logo from "../logo.png"
+
 export function Navbar() {
     return (
         <div className="flex items-center font-bandit text-bandit-text text-xl sticky top-0 z-50 gap-2 bg-bandit-bg md:px-4 md:flex-row justify-around lg:flex-row  md:text-2xl lg:px-8 lg:text-4xl gap-1">
-            <img src="./src/assets/logo.png" className="w-1/8 rounded-4xl"></img>
+            <img src={logo} className="w-1/8 rounded-4xl" alt="Hooded Bandits logo" />
             <a className="hidden md:flex lg:flex">
                 Home
             </a>
