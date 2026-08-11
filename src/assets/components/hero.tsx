@@ -1,11 +1,6 @@
 import heroImage from "../hero.png"
-import {useNavigate} from "react-router-dom"
 
 export function Hero() {
-    function handleViewCollection() {
-        const navigate = useNavigate();
-        navigate("/collection");
-    }
 
     function handleJoinCrew() {
         document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
