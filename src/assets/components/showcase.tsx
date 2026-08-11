@@ -11,6 +11,7 @@ import demo from "../demo.png";
 export function Showcase() {
 
     return(
+        <section id="about">
         <div className="flex flex-col font-bandit text-bandit-text font-stretch-expanded"> 
         <p className="text-3xl text-bandit-orange font-bandit text-center m-4">ABOUT</p>
         <div className="grid grid-cols-3 gap-2 m-4 border-solid border border-hood-purple rounded-md p-4 md:grid md:grid-cols-4 lg:grid lg:grid-cols-4 lg:p-20">
@@ -39,5 +40,6 @@ export function Showcase() {
             Their numbers grew, and their legend spread. They became known as the Hooded Bandits.
         </p>
         </div>
+        </section>
         )
 }
