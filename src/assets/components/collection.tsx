@@ -1,12 +1,16 @@
+import { useScrollReveal } from "../../hooks/useScrollReveal";
+
 export function Collection() {
+  const revealRef = useScrollReveal<HTMLElement>();
+
   return (
-    <section id="collection">
+    <section id="collection" ref={revealRef} className="scroll-reveal">
      <p className="text-3xl text-bandit-orange font-bandit text-center m-4">
         THE COLLECTION 🎨
       </p>
 
-      <div className=" flex flex-col  m-8 border-solid border md:col-span-2 lg:col-span-1 border-hood-purple inset-shadow-sm inset-shadow-violet-700/50 gap-2 rounded-md p-4 gap-2 font-bandit text-bandit-text md:grid grid-cols-4 border-box lg:grid grid-cols-4">
-        <div className="flex flex-col border md:col-span-2 lg:col-span-1 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md">
+      <div className="grid grid-cols-2 m-8 border-solid border border-hood-purple inset-shadow-sm inset-shadow-violet-700/50 gap-2 rounded-md p-4 gap-2 font-bandit text-bandit-text md:grid grid-cols-4 border-box lg:grid grid-cols-4">
+        <div className="flex flex-col col-span-4 border md:col-span-2 lg:col-span-1 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md scroll-reveal-item">
           <div className="flex flex-row gap-2">
             <svg
               version="1.1"
@@ -43,7 +47,7 @@ export function Collection() {
           <p className="text-gray-400">TOTAL SUPPLY</p>
         </div>
 
-        <div className="flex flex-col border md:col-span-2 lg:col-span-1 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md">
+        <div className="flex flex-col border col-span-4 lg:col-span-1 md:col-span-2 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md scroll-reveal-item">
           <div className="flex flex-row gap-2">
             <svg
               fill="#8DBF3F"
@@ -70,7 +74,7 @@ export function Collection() {
           <p className="text-gray-400">UNIQUE TRAITS</p>
         </div>
 
-        <div className="flex flex-col border border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md md:md:col-span-2 lg:col-span-1">
+        <div className="flex flex-col border col-span-4 lg:col-span-1 md:col-span-2 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md scroll-reveal-item">
           <div className="flex flex-row gap-2">
             <svg
               fill="#f15a24"
@@ -97,7 +101,7 @@ export function Collection() {
           <p className="text-gray-400">CHAIN</p>
         </div>
 
-        <div className="flex flex-col border md:col-span-2 lg:col-span-1 border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md">
+        <div className="flex flex-col border col-span-4 lg:col-span-1 border-solid md:col-span-2 border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md scroll-reveal-item">
           <div className="flex flex-row gap-2">
             <svg
               className="w-14"
@@ -126,6 +130,10 @@ export function Collection() {
           <p className="text-gray-400">COLLECTION</p>
         </div>
       </div>
+        <p className="font-bandit text-2xl px-4 text-justify text-hood-purple text-center md:text-3xl lg:text-4xl lg:px-12">
+          Hood Rogues is a collection of 3,333 unique PFPs on the Robinhood Chain. Each Rogue is a unique combination of <span className="text-bandit-orange">hand-drawn</span> traits and attributes, making them <span className="text-bandit-orange">one-of-a-kind</span>.
+          The collection is designed to be a fun and engaging way for users to express themselves and connect with others in the Hood Rogue community. Each Rogue is a digital collectible that can be used as a profile picture, avatar, or simply as a piece of art to admire.
+        </p>
     </section>
   );
 }

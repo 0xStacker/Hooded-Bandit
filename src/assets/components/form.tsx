@@ -20,7 +20,6 @@ export function Form(){
 
     return(
         <>
-            <img src={divider} alt="section divider" className="mx-auto w-30 " />
             <p className="text-3xl text-bandit-orange font-bandit text-center m-4">
                 BECOME A ROGUE 🦊
             </p>
@@ -28,6 +27,10 @@ export function Form(){
             <section id="join" className="flex flex-col border py-4 items-center gap-4 my-10 border-hood-purple inset-shadow-sm inset-shadow-violet-700/50 gap-2 rounded-md gap-2 ">
             <div className="flex flex-row gap-2">
                 <p className="text-hood-purple text-center font-bandit text-2xl">Like 💖 and Retweet 🔁 the campaign <a href="x.com" target="_blank"><span className="text-bandit-orange underline">Tweet</span> then drop your wallet address below</a></p>
+            </div>
+            <div className="flex flex-col items-center">
+                <p className="text-hood-purple font-bandit text-3xl m-2">Countdown</p>
+                <p className="text-3xl text-bandit-orange font-bandit">00 days 00 hrs 00 mins 00 sec</p>
             </div>
         <div className="flex flex-col items-center gap-4 max-w-200">
         <input type="text" value={walletAddress} onChange={(e: any) => { setWalletAddress(e.target.value)}} placeholder="0x00...000" className="rounded-md border border-solid text-bandit-text font-bandit p-2 text-2xl border-bandit-orange md:w-2xl md:p-4 lg:w-3xl lg:p-4" id="contact"></input> 
@@ -38,6 +41,7 @@ export function Form(){
         {submitted && <p className="text-bandit-green text-center font-bandit text-2xl">Thanks for joining the <span className="text-bandit-orange">Rogues !</span><br></br> <span className="text-hood-purple text-xl"> Your wallet has been recorded successfully !</span></p>}
         </div>
         </section>
+            <img src={divider} alt="section divider" className="mx-auto w-30 " />
         </>
         
 

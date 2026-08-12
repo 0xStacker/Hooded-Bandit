@@ -8,3 +8,25 @@
     --color-hood-purple: #7b4bb7;
     --font-bandit: "Jersey 15", sans-serif;
 }
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-reveal-item {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.is-visible .scroll-reveal-item {
+    opacity: 1;
+    transform: translateY(0);
+}
