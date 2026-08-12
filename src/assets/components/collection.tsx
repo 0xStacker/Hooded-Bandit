@@ -1,8 +1,8 @@
 export function Collection() {
   return (
     <section id="collection">
-      <p className="text-3xl text-bandit-orange font-bandit text-center m-4">
-        THE COLLECTION
+     <p className="text-3xl text-bandit-orange font-bandit text-center m-4">
+        THE COLLECTION 🎨
       </p>
 
       <div className=" flex flex-col  m-8 border-solid border md:col-span-2 lg:col-span-1 border-hood-purple inset-shadow-sm inset-shadow-violet-700/50 gap-2 rounded-md p-4 gap-2 font-bandit text-bandit-text md:grid grid-cols-4 border-box lg:grid grid-cols-4">

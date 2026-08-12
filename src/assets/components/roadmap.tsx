@@ -1,7 +1,10 @@
+import divider from "../divider.png";
+
 export function Roadmap(){
     return(
         <section id="roadmap">
-        <p className="text-3xl text-bandit-orange font-bandit text-center m-4">ROADMAP</p>
+        <img src={divider} alt="section divider" className="mx-auto w-30 " />
+        <p className="text-3xl text-bandit-orange font-bandit text-center m-4">ROADMAP 🗺</p>
         <div className="flex flex-col  m-8 border-solid border border-hood-purple inset-shadow-sm inset-shadow-violet-700/50 gap-2 rounded-md p-4 gap-2 font-bandit text-bandit-text md:grid grid-cols-4 lg:grid grid-cols-4">
                     
         <div className="flex flex-col md:col-span-2 lg:col-span-1 border border-solid border-hood-purple items-center border-r-solid border-r border-r-hood-purple px-8 py-2 rounded-md">

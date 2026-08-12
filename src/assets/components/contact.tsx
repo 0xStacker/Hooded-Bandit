@@ -1,8 +1,12 @@
+import divider from "../divider.png";
+
 export function Contact() {
     return (
         <section id="contact">
-            <div className="flex flex-row items-center justify-around rounded-md bg-bandit-orange px-8">
-                <p className="font-bandit text-3xl text-bandit-text">
+            <img src={divider} alt="section divider" className="mx-auto w-30 " />
+                
+            <div className="flex flex-row items-center rounded-md bg-bandit-orange px-8 py-6 gap-4">
+                <p className="font-bandit text-3xl text-bandit-text text-center">
                     JOIN THE CREW. CHANGE THE GAME.
                 </p>
 
