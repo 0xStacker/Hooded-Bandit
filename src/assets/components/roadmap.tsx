@@ -45,7 +45,7 @@ export function Roadmap(){
              <li> <p className="text-gray-400">Take back what's ours</p></li>
                 <li><p className="text-gray-400">Give back</p></li>
                 <li><p className="text-gray-400">IRL impact</p></li>
-                <li><p className="text-gray-400">$HOOD?</p></li>
+                <li><p className=" text-2xl text-bandit-green">$LOOT?</p></li>
                 </ul>
    
             </div>
