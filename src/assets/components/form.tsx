@@ -1,5 +1,5 @@
 import { useState } from "react";
-import divider from "../divider.png";
+// import divider from "../divider.png";
 
 type SubmissionStatus = "idle" | "submitting" | "success" | "invalid_wallet" | "already_registered" | "error";
 
