@@ -16,9 +16,9 @@ export function App(){
                 <div className="bg-bandit-bg p-4 md:px-12 md:py-4 lg:px-50 lg:py-8">
                     <Navbar />
                     <Hero />
-                    <Form />
                     <Collection />
                     <Showcase />
+                    <Form />
                     <Roadmap />
                     <Contact />
                 </div>
