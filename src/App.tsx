@@ -5,7 +5,7 @@ import { Hero } from "./assets/components/hero";
 import { Navbar } from "./assets/components/navbar";
 import { Roadmap } from "./assets/components/roadmap";
 import { Showcase } from "./assets/components/showcase";
-import { Form } from "./assets/components/form"
+// import { Form } from "./assets/components/form"
 
 import {Route, Routes} from "react-router-dom"
 
@@ -18,7 +18,7 @@ export function App(){
                     <Hero />
                     <Collection />
                     <Showcase />
-                    <Form />
+                    {/* <Form /> */}
                     <Roadmap />
                     <Contact />
                 </div>
