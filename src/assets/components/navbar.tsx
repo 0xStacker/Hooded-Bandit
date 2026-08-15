@@ -50,7 +50,7 @@ export function Navbar() {
 
     return (
         <div className="relative">
-            <div className="flex items-center font-bandit text-bandit-text text-xl sticky top-0 z-50 gap-2 bg-bandit-bg md:px-4 md:flex-row justify-around lg:flex-row md:text-2xl lg:px-8 lg:text-4xl gap-1">
+            <div className="flex items-center justify-between font-bandit text-bandit-text text-xl sticky top-0 z-50 gap-2 bg-bandit-bg md:px-4 md:flex-row lg:flex-row md:text-2xl lg:px-8 lg:text-4xl gap-1">
                 <img src={logo} className="w-1/8 rounded-4xl" alt="Hooded Bandits logo" />
 
                 <button id="nav-0" onClick={handleViewHome} className="hidden md:flex lg:flex">
@@ -80,16 +80,35 @@ export function Navbar() {
                     </svg>
                 </button>
 
-                <button
-                    type="button"
-                    aria-label="Toggle navigation"
-                    onClick={() => setMobileMenuOpen((prev) => !prev)}
-                    className="md:hidden flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md border border-bandit-orange p-2 text-bandit-orange"
-                >
-                    <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "translate-y-2 rotate-45" : ""}`} />
-                    <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "opacity-0" : ""}`} />
-                    <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
-                </button>
+                <div className="ml-auto flex items-center gap-2 md:hidden">
+                    <a
+                        href="https://x.com/hoodroguesNFT"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="X"
+                        className="inline-flex h-8 w-8 items-center justify-center text-bandit-orange transition-transform duration-200 hover:scale-110"
+                    >
+                        <svg
+                            className="h-5 w-5 fill-current"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 50 50"
+                            aria-hidden="true"
+                        >
+                            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                    </a>
+
+                    <button
+                        type="button"
+                        aria-label="Toggle navigation"
+                        onClick={() => setMobileMenuOpen((prev) => !prev)}
+                        className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-full border border-bandit-orange/80 bg-bandit-orange/5 p-2 text-bandit-orange shadow-sm shadow-bandit-orange/20 transition-transform duration-200 hover:scale-105"
+                    >
+                        <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "translate-y-2 rotate-45" : ""}`} />
+                        <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "opacity-0" : ""}`} />
+                        <span className={`block h-0.5 w-6 rounded-full bg-current transition-all ${mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+                    </button>
+                </div>
             </div>
 
             {mobileMenuOpen && (

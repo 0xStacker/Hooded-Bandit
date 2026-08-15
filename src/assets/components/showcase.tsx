@@ -50,7 +50,7 @@ export function Showcase() {
                     Some were simply just tired of watching the city burn.
                     But they shared one rule:
                     <span className="text-bandit-orange"> Never steal from someone who has nothing.</span>
-                    Their numbers grew, and their legend spread. They became known as the Hooded Bandits.
+                    Their numbers grew, and their legend spread. They became known as the Hood Rogues.
                 </p>
                </div>
                               
